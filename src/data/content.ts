@@ -11,7 +11,7 @@ import type {
 
 export const COMPANY = {
   name: "Quad Production Technologies Co. Nig. Ltd.",
-  tagline: "Intelligent Monitoring. Complete Safety & Security",
+  tagline: "Intelligent Asset Monitoring. Complete Safety & Security",
   services:
     "Hazardous-Area Telecommunication - CCTV, PAGA, PABX * Tank Gauging & Metering System * Fabrication * SURF - Subsea Engineering * Security Solution",
   website: "https://quad-prod.vercel.app/",
@@ -28,7 +28,7 @@ export const SERVICE_STRIP = [
 
 /* ---------- Introduction ---------- */
 export const INTRODUCTION =
-  "uad Production Technologies, a Technical Service Integrator (TSI) Company Designs, Procures, Provides Installation & Telecommunication Services for Oil & Gas Production Facilities. Fabrication of Platform Frames, Support Structures and Process Piping. The Company also offers High Grade Automatic Tank Gauging & Metering System (TGS) providing radar level, pressure and temperature measurement for real-time inventory control and software interface.";
+  "uad Production Technologies, a Technical Service Integrator (TSI) Company Designs, Procures, Provides Installation & Commissioning Services for Oil & Gas Production Facilities. Provisions of Hazardous Area Telecommunication Products, Fabrication of Platform Frames, Support Structures and Process Piping. The Company also offers High Grade Automatic Tank Gauging & Metering System (TGS) providing radar level, pressure and temperature measurement for real-time inventory control and software interface.";
 
 export const INTRO_POINTS: { title: string; text: string }[] = [
   {
@@ -37,11 +37,11 @@ export const INTRO_POINTS: { title: string; text: string }[] = [
   },
   {
     title: "Our Partners:",
-    text: "Local equipment distributor and service representative for Eaton's hazardous Ex CCTV cameras and telecommunications equipments (Crouse-Hinds/Hernis HAC).",
+    text: "Local equipment distributor and service representative for Eaton's Hazardous Area Telecommunication Equipment-Ex CCTV cameras (Crouse-Hinds/Hernis HAC).",
   },
   {
     title: "Our Services:",
-    text: "Procurement, Installation and After-sales preventive & corrective maintenance services for our partner's products across Nigeria and West Africa.",
+    text: "Procurement, Installation and After-sales preventive & corrective maintenance services for our products across Nigeria and West Africa.",
   },
 ];
 
@@ -51,8 +51,8 @@ export const ABOUT = {
   whoWeAreText:
     "From a hazardous-area telecommunications specialist to a full-service EPCIC contractor - built in Lagos, trusted across offshore West Africa.",
   company: [
-    "Quad Production Technologies is an integrated EPCIC, offshore brownfield topside modification, fabrication, construction, hook-up, commissioning and CCTV-security contractor that has grown into a full-service engineering partner for Oil and Gas operators across marine and shore-base facilities - including FPSOs, production platforms, FSOs and drilling vessels.",
-    "As the authorised OEM representative for Eaton's Crouse-Hinds/Hernis Hazardous-area communication range, Sidus Solutions (USA) and Lexington Engineering Group (Dallas), Quad Production Technologies supplies products recognized as the world leader in process security and safety video management installed across the majority of the world's production platforms, FPSOs, drilling rigs and refineries.",
+    "Quad Production Technologies is an integrated EPCIC, offshore brownfield topside modification, fabrication, construction, hook-up, commissioning and CCTV-security service provider. The company has grown into a full-service engineering partner for Oil and Gas operators across marine and shore-base facilities - including FPSOs, FSOs, production platforms and drilling vessels.",
+    "As the authorised OEM representative for Eaton's Crouse-Hinds/Hernis Hazardous-area communication range, Sidus Solutions (USA) and Lexington Engineering Group (Dallas), Quad Production Technologies supplies products recognized as the world leader in process safety and security video management installed across the majority of the world's production platforms, FPSOs, drilling rigs and refineries.",
   ],
 };
 
@@ -374,8 +374,8 @@ export interface PartnerLogo {
   logo: string;
 }
 
-// Order follows the "Our Clients" page of the Company Profile.
-export const PARTNER_LOGOS: PartnerLogo[] = [
+// Order follows the "Our Clients" / "Our Partners" page of the Company Profile.
+export const CLIENT_LOGOS: PartnerLogo[] = [
   { name: "TotalEnergies", color: "#CC0000", logo: "/logos/totalenergies.png" },
   { name: "NNPC", color: "#0B7A3B", logo: "/logos/nnpc.png" },
   { name: "Seplat Energy", color: "#2E9E4F", logo: "/logos/seplat-energy.png" },
@@ -387,13 +387,20 @@ export const PARTNER_LOGOS: PartnerLogo[] = [
   { name: "ExxonMobil", color: "#D91B21", logo: "/logos/exxonmobil.png" },
   { name: "Golar LNG", color: "#0A2E5C", logo: "/logos/golar-lng.png" },
   { name: "PACE", color: "#C8102E", logo: "/logos/pace.png" },
-  { name: "Sidus", color: "#5FAE3E", logo: "/logos/sidus.png" },
   { name: "AMNI", color: "#E8720C", logo: "/logos/amni.png" },
-  { name: "Eaton", color: "#0033A0", logo: "/logos/eaton.png" },
-  { name: "Crouse-Hinds", color: "#111111", logo: "/logos/crouse-hinds.png" },
-  { name: "Esso", color: "#004B93", logo: "/logos/esso.png" },
   { name: "Shell", color: "#DD1D21", logo: "/logos/shell.png" },
+  { name: "Esso", color: "#004B93", logo: "/logos/esso.png" },
   { name: "BW Offshore", color: "#1D2D7A", logo: "/logos/bw-offshore.png" },
+  { name: "Seadrill", color: "#1B2A6B", logo: "/logos/seadrill.png" },
+  { name: "Pacific Drilling", color: "#0B5FA5", logo: "/logos/pacific-drilling.png" },
+  { name: "Transocean", color: "#C8102E", logo: "/logos/transocean.png" },
+];
+
+export const PARTNER_LOGOS: PartnerLogo[] = [
+  { name: "Eaton", color: "#0033A0", logo: "/logos/eaton.png" },
+  { name: "Sidus", color: "#5FAE3E", logo: "/logos/sidus.png" },
+  { name: "Crouse-Hinds", color: "#111111", logo: "/logos/crouse-hinds.png" },
+  { name: "Hernis", color: "#111111", logo: "/logos/hernis.png" },
 ];
 
 /* ---------- Contact ---------- */
@@ -402,8 +409,8 @@ export const OFFICES: Office[] = [
     tag: "HQ — LAGOS",
     name: "Lagos Office",
     lines: ["8-10 Broad Street, Western House, 8th Floor, Suite #802", "Lagos Island, Lagos, Nigeria"],
-    phones: ["+234 803 322 4979", "+234 911 204 0002", "+234 911 204 0001"],
-    email: "quad@quadproductiontechnologies.com",
+    phones: ["+234 803 322 4979", "+234 803 333 6016", "+234 911 204 0002", "+234 911 204 0001"],
+    emails: ["quad@quadproductiontechnologies.com", "yetunde.kayode@quadproductiontechnologies.com"],
   },
   {
     tag: "FABRICATION YARD",
@@ -412,5 +419,5 @@ export const OFFICES: Office[] = [
   },
 ];
 
-export const CONTACT_EMAIL = "quad@quadproductiontechnologies.com";
-export const CONTACT_PHONES = ["+234 803 322 4979", "+234 911 204 0002", "+234 911 204 0001"];
+export const CONTACT_EMAILS = ["quad@quadproductiontechnologies.com", "yetunde.kayode@quadproductiontechnologies.com"];
+export const CONTACT_PHONES = ["+234 803 322 4979", "+234 803 333 6016", "+234 911 204 0002", "+234 911 204 0001"];

@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
@@ -21,7 +21,8 @@ export default function AppRoutes() {
         <Route path="/capabilities" element={<CapabilitiesPage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/safety" element={<SafetyPage />} />
-        <Route path="/track-record" element={<TrackRecordPage />} />
+        <Route path="/clients" element={<TrackRecordPage />} />
+        <Route path="/track-record" element={<Navigate to="/clients" replace />} />
         <Route path="/locations" element={<LocationsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />

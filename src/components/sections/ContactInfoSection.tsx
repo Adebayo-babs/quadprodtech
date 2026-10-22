@@ -25,9 +25,15 @@ export default function ContactInfoSection({ children }: { children?: ReactNode 
                   ))}
                 </span>
               )}
-              {o.email && (
+              {o.emails && (
                 <span>
-                  E-mail: <a href={`mailto:${o.email}`}>{o.email}</a>
+                  E-mail:{" "}
+                  {o.emails.map((e, i) => (
+                    <span key={e}>
+                      {i > 0 && ", "}
+                      <a href={`mailto:${e}`}>{e}</a>
+                    </span>
+                  ))}
                 </span>
               )}
             </address>

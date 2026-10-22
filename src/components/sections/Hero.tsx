@@ -38,7 +38,7 @@ export default function Hero() {
               CO. NIG. LTD.
             </strong>
             <span>
-              Intelligent Monitoring.
+              Intelligent Asset Monitoring.
               <br />
               Complete Safety &amp; Security
             </span>

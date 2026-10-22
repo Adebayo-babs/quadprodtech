@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 const NAV_LINKS: [string, string][] = [
   ["Home", "/"], ["About", "/about"], ["Expertise", "/expertise"],
   ["Products", "/products"], ["Capabilities", "/capabilities"], ["Safety", "/safety"],
-  ["Track Record", "/track-record"], ["Contact", "/contact"],
+  ["Clients", "/clients"], ["Contact", "/contact"],
 ];
 
 function linkClass({ isActive }: { isActive: boolean }) {

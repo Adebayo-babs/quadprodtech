@@ -38,7 +38,7 @@ export interface Office {
   name: string;
   lines: string[];
   phones?: string[];
-  email?: string;
+  emails?: string[];
 }
 
 export interface ContactFormState {

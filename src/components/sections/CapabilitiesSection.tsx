@@ -7,7 +7,7 @@ export default function CapabilitiesSection() {
       <section className="capability" style={{ backgroundImage: `url(${IMG.cctvCapabilityBg})` }}>
         <div className="container">
           <div className="capability-card">
-            <h2 className="cap-heading">CCTV &amp; Security Capability</h2>
+            <h2 className="cap-heading">Ex-CCTV &amp; Security Capability</h2>
             <p>Full lifecycle capability from design to decommissioning.</p>
             <p>Security engineering, fabrication, installation and monitoring delivered turnkey by our own crews.</p>
 

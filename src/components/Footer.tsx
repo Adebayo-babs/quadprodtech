@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Download } from "lucide-react";
 import ServiceStrip from "./ui/ServiceStrip";
-import { COMPANY, CONTACT_EMAIL, CONTACT_PHONES } from "../data/content";
+import { COMPANY, CONTACT_EMAILS, CONTACT_PHONES } from "../data/content";
 
 const QUICK_LINKS: [string, string][] = [
   ["About Us", "/about"], ["Our Expertise", "/expertise"], ["Products", "/products"],
-  ["Capabilities & EPCI", "/capabilities"], ["Safety", "/safety"], ["Track Record", "/track-record"],
+  ["Capabilities & EPCI", "/capabilities"], ["Safety", "/safety"], ["Clients & Partners", "/clients"],
 ];
 
 export default function Footer() {
@@ -45,10 +45,12 @@ export default function Footer() {
             <Phone size={16} />
             <span>{CONTACT_PHONES.join(", ")}</span>
           </div>
-          <div className="footer-contact-item">
-            <Mail size={16} />
-            <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
-          </div>
+          {CONTACT_EMAILS.map((e) => (
+            <div className="footer-contact-item" key={e}>
+              <Mail size={16} />
+              <a href={`mailto:${e}`}>{e}</a>
+            </div>
+          ))}
         </div>
       </div>
 
