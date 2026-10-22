@@ -10,6 +10,7 @@ import SubseaSection from "../components/sections/SubseaSection";
 import SecuritySection from "../components/sections/SecuritySection";
 import EPCICover from "../components/sections/EPCICover";
 import SafetySection from "../components/sections/SafetySection";
+import TrackRecordSection from "../components/sections/TrackRecordSection";
 import ClientsSection from "../components/sections/ClientsSection";
 import ContactInfoSection from "../components/sections/ContactInfoSection";
 import ClosingSection from "../components/sections/ClosingSection";
@@ -30,6 +31,7 @@ export default function HomePage() {
       <SecuritySection />
       <EPCICover link />
       <SafetySection />
+      <TrackRecordSection teaser />
       <ClientsSection />
       <ContactInfoSection />
       <ClosingSection />

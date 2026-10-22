@@ -5,7 +5,7 @@ import { COMPANY, CONTACT_EMAILS, CONTACT_PHONES } from "../data/content";
 
 const QUICK_LINKS: [string, string][] = [
   ["About Us", "/about"], ["Our Expertise", "/expertise"], ["Products", "/products"],
-  ["Capabilities & EPCI", "/capabilities"], ["Safety", "/safety"], ["Clients & Partners", "/clients"],
+  ["Capabilities & EPCI", "/capabilities"], ["Safety", "/safety"], ["Track Record", "/track-record"],
 ];
 
 export default function Footer() {

@@ -21,8 +21,8 @@ export default function AppRoutes() {
         <Route path="/capabilities" element={<CapabilitiesPage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/safety" element={<SafetyPage />} />
-        <Route path="/clients" element={<TrackRecordPage />} />
-        <Route path="/track-record" element={<Navigate to="/clients" replace />} />
+        <Route path="/track-record" element={<TrackRecordPage />} />
+        <Route path="/clients" element={<Navigate to="/track-record#clients" replace />} />
         <Route path="/locations" element={<LocationsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
